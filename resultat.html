@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC>
+<html>
+
+<head>
+    <title>YNOV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="title">
+        <h1 align="center">
+            GLOTH 
+        </h1>
+        <br>
+        <br>
+       
+    </div>
+
+    <div id="res">
+            <h3>
+                ORDONANCES
+            </h3>
+        
+            <hr  style="border: 3px solid blueviolet;">
+            Nom:
+            <p id="resultNom"></p>
+            Prénom:
+            <p id="resultPrenom"></p>
+            Email:
+            <p id="resultEmail"></p>
+            Téléphone:
+            <p id="resultTel"></p>
+            Numéro d’identification du médecin:
+            <p id="resultNumeroid"></p>
+
+
+            <h2>
+                   Le prescripteur peut exclure, pour des raisons particulières tenant au patient, la possibilité pour le pharmacien de délivrer par substitution un médicament générique, par la mention « non substituable » portée de manière manuscrite sur l’ordonnance avant la dénomination commerciale du médicament ou du produit prescrit.
+            </h2>
+    </div>
+
+    <div>
+        <script>
+            document.getElementById("resultNom").innerHTML=localStorage.getItem("nom");
+            document.getElementById("resultPrenom").innerHTML=localStorage.getItem("prenom");
+            document.getElementById("resultEmail").innerHTML=localStorage.getItem("email");
+            document.getElementById("resultTel").innerHTML=localStorage.getItem("tel");
+           document.getElementById("resultNumeroid").innerHTML=localStorage.getItem("numeroid");
+        </script>
+    </div>
+</body>
+
+</html>
